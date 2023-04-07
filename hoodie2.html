@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoodie - My Cart</title>
+    <style>
+        .navbar{
+            background: radial-gradient(#fff,#fffd6d);
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="logo.png" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="cart.png" width="30px" height="30px"></a>
+            <img src="menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+</div>
+<!---single product details--->
+<div class="small-container single-product">
+    <div class="row">
+        <div class="col-2">
+            <img src="hoodie2.png" width="100%">
+            
+        </div>
+        <div class="col-2">
+            <p>Home / T-shirt</p>
+            <h2>Graphic Print Hooded Sweatshirt</h2>
+            <h4>₹379</h4>
+            <select>
+                <option>Select size</option>
+                <option>XXL</option>
+                <option>XL</option>
+                <option>Large</option>
+                <option>Medium</option>
+                <option>Small</option>
+            </select>
+            <input type="number" value="1">
+            <a href="" class="btn">Add to Cart</a>
+            <h3>Product details</h3>
+            <p>Give your winter wardrobe a style with cartshop Hooded sweat shirt.</p>
+        </div>
+    </div>
+</div>
+<!----title--->
+<div class="small-container">
+    <div class="row row-2">
+        <h2>Related Products</h2>
+        <p>view more</p>
+    </div>
+</div>
+    <!---- featured products---->
+    <div class="small-container">        
+        <div class="row">
+            <div class="col-4">
+                <a href="hoodie1.html"><img src="hoodie1.png"></a>
+                <a href="hoodie1.html"><h4>Hooded Sweat shirt</h4></a>
+                <p>₹399</p>
+            </div>
+        
+            <div class="col-4">
+                <a href="hoodie3.html"><img src="hoodie3.png"></a>
+                <a href="hoodie3.html"><h4>Graphic Print Hooded T-Shirt</h4></a>
+                <p>₹399</p>
+            </div>
+            <div class="col-4">
+                <a href="hoodie4.html"><img src="hoodie4.png"></a>
+                <a href="hoodie4.html"><h4>Printed Hooded Sweat T-Shirt</h4></a>
+                <p>₹499</p>
+            </div>
+            <div class="col-4">
+                <a href="hoodie5.html"><img src="hoodie5.png"></a>
+                <a href="hoodie5.html"><h4>Hooded Sweat T-Shirt</h4></a>
+                <p>₹379</p>
+            </div>
+        </div>
+</div> 
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download our App</h3>
+                <p>Download our app for Android and IOS mobile phones.</p>
+                <div class="applogo">
+                    <img src="play-store.png">
+                    <img src="app-store.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="logo.png">
+                <p>Our Purpose Is To Make The Benefits Of Sports Accessible to the Many. </p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2023 - Mohit Jhawar</p>
+    </div>
+</div>
+
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+    function menutoggle(){
+        if (MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px";
+        }
+        else{
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+</script>
+</body>
+</html>

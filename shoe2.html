@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe - My Cart</title>
+    <style>
+        .navbar{
+            background: radial-gradient(#fff,#fffd6d);
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="logo.png" width="125px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="cart.png" width="30px" height="30px"></a>
+            <img src="menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+</div>
+<!---single product details--->
+<div class="small-container single-product">
+    <div class="row">
+        <div class="col-2">
+            <img src="shoe2.png" width="100%">
+            
+        </div>
+        <div class="col-2">
+            <p>Home / Shoe</p>
+            <h2>Trendy & Stylish Loafers</h2>
+            <h4>₹299</h4>
+            <select>
+                <option>Select size</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+            </select>
+            <input type="number" value="1">
+            <a href="" class="btn">Add to Cart</a>
+            <h3>Product details</h3>
+            <p>MyCart offers a wide range of shoes for men.</p>
+        </div>
+    </div>
+</div>
+<!----title--->
+<div class="small-container">
+    <div class="row row-2">
+        <h2>Related Products</h2>
+        <p>view more</p>
+    </div>
+</div>
+    <!---- featured products---->
+    <div class="small-container">        
+        <div class="row">
+            <div class="col-4">
+                <a href="shoe1.html"><img src="shoe1.png"></a>
+                <a href="shoe1.html"><h4>Daily Use Sneakers For Men</h4></a>
+                <p>₹399</p>
+            </div>
+        
+            <div class="col-4">
+                <a href="shoe3.html"><img src="shoe3.png"></a>
+                <a href="shoe3.html"><h4>Casual Shoes Sneakers</h4></a>
+                <p>₹499</p>
+            </div>
+            <div class="col-4">
+                <a href="shoe4.html"><img src="shoe4.png"></a>
+                <a href="shoe4.html"><h4>Party Wear Shoe</h4></a>
+                <p>₹299</p>
+            </div>
+            <div class="col-4">
+                <a href="shoe5.html"><img src="shoe5.png"></a>
+                <a href="shoe5.html"><h4>Casual Shoes Sneakers</h4></a>
+                <p>₹499</p>
+            </div>
+        </div>
+</div> 
+
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download our App</h3>
+                <p>Download our app for Android and IOS mobile phones.</p>
+                <div class="applogo">
+                    <img src="app-store.png">
+                    <img src="play-store.png">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="logo.png">
+                <p>Our Purpose Is To Make The Benefits Of Sports Accessible to the Many. </p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>Youtube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2023 - Mohit Jhawar</p>
+    </div>
+</div>
+
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+    MenuItems.style.maxHeight = "0px";
+    function menutoggle(){
+        if (MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px";
+        }
+        else{
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+</script>
+</body>
+</html>
